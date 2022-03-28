@@ -2,3 +2,45 @@
     margin: 0;
     padding: 0;
 }
+
+.container{
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.landing-cover{
+    width: 100%;
+    height: 700px;
+    background-image: url('https://www.theindiaforum.in/sites/default/files/field/image/2021/05/28/ramkumar-radhakrishnan-wikimedia-1622193304.jpeg') ;
+    margin-top: -4.5%;
+    background-position: center;
+    overflow: hidden;
+}
+
+.navbar{
+    background-color: transparent !important;
+
+}
+
+.serachbar{
+    transform: translate(39%,280px);
+}
+
+.buttons{
+    transform: translate(38%,140px);
+}
+
+.buttons1{
+    margin: 20px !important;
+}
+
+.navButtons{
+    display: flex !important;
+    justify-content: flex-end !important;
+    margin-right: 70px !important;
+}
+
+.Footer{
+    
+}

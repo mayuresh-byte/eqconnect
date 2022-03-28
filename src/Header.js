@@ -11,8 +11,9 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+import './App.css'
 
-const pages = ["Products", "Pricing", "Blog"];
+const pages = ["About us", "Services", "Blog", "Contact us"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function Header() {
@@ -36,7 +37,7 @@ function Header() {
 
   return (
     <div>
-      <AppBar position="static">
+      <AppBar position="static" className="navbar">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography
@@ -48,7 +49,7 @@ function Header() {
               EqConnections
             </Typography>
 
-            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <Box  sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
               <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -59,7 +60,7 @@ function Header() {
               >
                 {/* <MenuIcon /> */}
               </IconButton>
-              <Menu
+              <Menu 
                 id="menu-appbar"
                 anchorEl={anchorElNav}
                 anchorOrigin={{
@@ -78,7 +79,7 @@ function Header() {
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <MenuItem  key={page} onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">{page}</Typography>
                   </MenuItem>
                 ))}
@@ -92,7 +93,7 @@ function Header() {
             >
               LOGO
             </Typography>
-            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+            <Box className="navButtons" sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               {pages.map((page) => (
                 <Button
                   key={page}
