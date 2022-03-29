@@ -6,10 +6,12 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Avatar from '@material-ui/core/avatar'
+import { spacing } from '@mui/system';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        minWidth: 275,
+        minWidth: 375,
+        minHeight: 300,
         cursor:'pointer',
     },
     bullet: {
@@ -23,11 +25,18 @@ const useStyles = makeStyles((theme) => ({
     pos: {
         marginBottom: 12,
     },
+    cont: {
+        marginTop: 50,
+    },
     img: {
         float: 'right',
-        width: 145,
-        height: 145,
+        width: 175,
+        height: 175,
 
+    },
+    itm: {
+        display: 'flex',
+        flexDirection:"row",
     },
     paper: {
         padding: theme.spacing(2),
@@ -40,27 +49,86 @@ const Tenants = () => {
     const classes = useStyles();
     return (
         <div>
-            <Container>
-                <Grid container spacing={3}>
-                    <Grid item xs={12} sm={6} md={4} >
+            <Container className={classes.cont}>
+                <Grid container spacing={3} className = {classes.itm}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <Card className={classes.root}>
                             <CardContent>
-                                <Avatar className={classes.img} alt="Sorry !" src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kubota.com%2Fproducts%2Ftractor%2Findex.html&psig=AOvVaw0vz9gUkZN5_vZl8P3WtULk&ust=1648583077578000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIDusuXI6fYCFQAAAAAdAAAAABAD' />
+                                <Avatar className={classes.img} alt="Sorry !" src='https://res.cloudinary.com/dsfzcj5qk/image/upload/v1615410918/tractor/Modeern-tractor.jpg' />
                                 <Typography className={classes.title} color="textSecondary" gutterBottom>
-                                    CrypWorld
+                                    EqConnect
                                 </Typography>
                                 <Typography variant="h5" component="h2">
-                                    Coin Name
+                                    Tractor
                                 </Typography>
                                 <Typography className={classes.pos} color="textSecondary">
-                                    Current Price: $
+                                    Rent Range : ₹ 600-1200
                                 </Typography>
                                 <Typography className={classes.pos} color="textSecondary">
-                                    Total Volume: 
+                                    Category : Machine 
+                                </Typography>
+                                <Typography className={classes.pos} color="textSecondary">
+                                    Product Description :
+                                </Typography>
+                                <Typography className={classes.pos} color="textSecondary">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nesciunt nihil in suscipit. Quo consequuntur culpa eligendi fugit atque similique mollitia ipsa velit! Voluptatem, ullam vero quasi iste sequi nulla.
                                 </Typography>
                             </CardContent>
                         </Card>
                     </Grid>
+
+                    <Grid item xs={12} sm={6} md={4}>
+                        <Card className={classes.root}>
+                            <CardContent>
+                                <Avatar className={classes.img} alt="Sorry !" src='https://3.imimg.com/data3/KP/CY/MY-8032692/harvester-250x250.jpg' />
+                                <Typography className={classes.title} color="textSecondary" gutterBottom>
+                                EqConnect
+                                </Typography>
+                                <Typography variant="h5" component="h2">
+                                    Harvester
+                                </Typography>
+                                <Typography className={classes.pos} color="textSecondary">
+                                    Rent Range : ₹ 600-1200
+                                </Typography>
+                                <Typography className={classes.pos} color="textSecondary">
+                                    Category : Machine 
+                                </Typography>
+                                <Typography className={classes.pos} color="textSecondary">
+                                    Product Description :
+                                </Typography>
+                                <Typography className={classes.pos} color="textSecondary">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nesciunt nihil in suscipit. Quo consequuntur culpa eligendi fugit atque similique mollitia ipsa velit! Voluptatem, ullam vero quasi iste sequi nulla.
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+
+                    <Grid item xs={12} sm={6} md={4}>
+                        <Card className={classes.root}>
+                            <CardContent>
+                                <Avatar className={classes.img} alt="Sorry !" src='https://4.imimg.com/data4/YB/RF/MY-15110964/1-500x500.jpg' />
+                                <Typography className={classes.title} color="textSecondary" gutterBottom>
+                                    EqConnect
+                                </Typography>
+                                <Typography variant="h5" component="h2">
+                                Seed Sower
+                                </Typography>
+                                <Typography className={classes.pos} color="textSecondary">
+                                    Rent Range : ₹ 600-1200
+                                </Typography>
+                                <Typography className={classes.pos} color="textSecondary">
+                                    Category : Machine 
+                                </Typography>
+                                <Typography className={classes.pos} color="textSecondary">
+                                    Product Description :
+                                </Typography>
+                                <Typography className={classes.pos} color="textSecondary">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nesciunt nihil in suscipit. Quo consequuntur culpa eligendi fugit atque similique mollitia ipsa velit! Voluptatem, ullam vero quasi iste sequi nulla.
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    
                 </Grid>
             </Container>
         </div>
