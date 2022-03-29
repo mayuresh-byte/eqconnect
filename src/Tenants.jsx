@@ -7,12 +7,13 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Avatar from '@material-ui/core/avatar'
 import { spacing } from '@mui/system';
+import Button from '@mui/material/Button'
 
 const useStyles = makeStyles((theme) => ({
     root: {
         minWidth: 375,
         minHeight: 300,
-        cursor:'pointer',
+        cursor: 'pointer',
     },
     bullet: {
         display: 'inline-block',
@@ -36,13 +37,19 @@ const useStyles = makeStyles((theme) => ({
     },
     itm: {
         display: 'flex',
-        flexDirection:"row",
+        flexDirection: "row",
+    },
+    aval:
+    {
+        marginBottom: 10,
+        textAlign: 'center',
     },
     paper: {
         padding: theme.spacing(2),
         textAlign: 'center',
         color: theme.palette.text.secondary,
     },
+
 }));
 
 const Tenants = () => {
@@ -50,7 +57,8 @@ const Tenants = () => {
     return (
         <div>
             <Container className={classes.cont}>
-                <Grid container spacing={3} className = {classes.itm}>
+                <Typography className={classes.aval} variant='h4'>Available Products</Typography>
+                <Grid container spacing={3} className={classes.itm}>
                     <Grid item xs={12} sm={6} md={4}>
                         <Card className={classes.root}>
                             <CardContent>
@@ -65,7 +73,7 @@ const Tenants = () => {
                                     Rent Range : ₹ 600-1200
                                 </Typography>
                                 <Typography className={classes.pos} color="textSecondary">
-                                    Category : Machine 
+                                    Category : Machine
                                 </Typography>
                                 <Typography className={classes.pos} color="textSecondary">
                                     Product Description :
@@ -73,6 +81,9 @@ const Tenants = () => {
                                 <Typography className={classes.pos} color="textSecondary">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nesciunt nihil in suscipit. Quo consequuntur culpa eligendi fugit atque similique mollitia ipsa velit! Voluptatem, ullam vero quasi iste sequi nulla.
                                 </Typography>
+                                <Button variant="contained" color="secondary">
+                                    Add To Cart
+                                </Button>
                             </CardContent>
                         </Card>
                     </Grid>
@@ -82,7 +93,7 @@ const Tenants = () => {
                             <CardContent>
                                 <Avatar className={classes.img} alt="Sorry !" src='https://3.imimg.com/data3/KP/CY/MY-8032692/harvester-250x250.jpg' />
                                 <Typography className={classes.title} color="textSecondary" gutterBottom>
-                                EqConnect
+                                    EqConnect
                                 </Typography>
                                 <Typography variant="h5" component="h2">
                                     Harvester
@@ -91,7 +102,7 @@ const Tenants = () => {
                                     Rent Range : ₹ 600-1200
                                 </Typography>
                                 <Typography className={classes.pos} color="textSecondary">
-                                    Category : Machine 
+                                    Category : Machine
                                 </Typography>
                                 <Typography className={classes.pos} color="textSecondary">
                                     Product Description :
@@ -99,6 +110,9 @@ const Tenants = () => {
                                 <Typography className={classes.pos} color="textSecondary">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nesciunt nihil in suscipit. Quo consequuntur culpa eligendi fugit atque similique mollitia ipsa velit! Voluptatem, ullam vero quasi iste sequi nulla.
                                 </Typography>
+                                <Button variant="contained" color="secondary">
+                                    Add To Cart
+                                </Button>
                             </CardContent>
                         </Card>
                     </Grid>
@@ -111,13 +125,13 @@ const Tenants = () => {
                                     EqConnect
                                 </Typography>
                                 <Typography variant="h5" component="h2">
-                                Seed Sower
+                                    Seed Sower
                                 </Typography>
                                 <Typography className={classes.pos} color="textSecondary">
                                     Rent Range : ₹ 600-1200
                                 </Typography>
                                 <Typography className={classes.pos} color="textSecondary">
-                                    Category : Machine 
+                                    Category : Machine
                                 </Typography>
                                 <Typography className={classes.pos} color="textSecondary">
                                     Product Description :
@@ -125,10 +139,13 @@ const Tenants = () => {
                                 <Typography className={classes.pos} color="textSecondary">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nesciunt nihil in suscipit. Quo consequuntur culpa eligendi fugit atque similique mollitia ipsa velit! Voluptatem, ullam vero quasi iste sequi nulla.
                                 </Typography>
+                                <Button variant="contained" color="secondary">
+                                    Add To Cart
+                                </Button>
                             </CardContent>
                         </Card>
                     </Grid>
-                    
+
                 </Grid>
             </Container>
         </div>
